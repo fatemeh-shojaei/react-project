@@ -33,6 +33,15 @@
     "pretest": "npm.cmd run compile",
     "posttest": "npm.cmd run lint"
   },
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "",      
+      "pre-push": "",         
+      "...": "..."
+    }
+  },
+
   "eslintConfig": {
     "extends": [
       "react-app",
