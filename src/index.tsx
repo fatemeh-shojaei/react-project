@@ -7,7 +7,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalContext>
     <App />
+    </GlobalContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
