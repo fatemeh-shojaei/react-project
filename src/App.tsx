@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
+import {Route, Switch, BrowserRouter} from 'react-router-dom';
+import MyRoute from './routes/index';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <h1>hello world</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={MyRoute} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
