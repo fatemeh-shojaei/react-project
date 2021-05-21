@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import jwt from 'jsonwebtoken';
 
 import mainContext from './mainContext';
 
 class GlobalState extends Component {
   state = {
-    user: null,
+    user: null
   };
 
   componentDidMount() {
@@ -16,24 +16,24 @@ class GlobalState extends Component {
     const token = localStorage.getItem('token');
 
     if (token) {
-      const decodedToken = jwt.decode(token, {complete: true});
+      const decodedToken = jwt.decode(token, { complete: true });
       const dateNow = Date.now() / 1000;
       // await  this.setState({ user: decodedToken.payload.user });
       if (decodedToken.payload.exp < dateNow) {
         localStorage.removeItem('token');
       } else {
-        await this.setState({user: decodedToken.payload});
+        await this.setState({ user: decodedToken.payload });
         console.log(this.state.user);
       }
     }
   };
 
   render() {
-    const {user} = this.state;
+    const { user } = this.state;
     return (
       <mainContext.Provider
         value={{
-          user,
+          user
         }}
       >
         {this.props.children}

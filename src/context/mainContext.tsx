@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {ContextType} from '../models/context.model';
+import { ContextType } from '../models/context.model';
 const userContext = React.createContext<ContextType>({
-  user: null,
+  user: null
 });
 
 export default userContext;
