@@ -1,6 +1,6 @@
-import React, {useContext, useState, useEffect} from 'react';
-import {useHistory} from 'react-router-dom';
-import {REgisterStateType} from '../../models/auth';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { REgisterStateType } from '../../models/auth';
 
 const Register: React.FC = () => {
   const history = useHistory();
@@ -20,11 +20,11 @@ const Register: React.FC = () => {
   const handleInput = (event): void => {
     setSatte({
       ...state,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     });
   };
   return (
-    <form style={{padding: '10%'}} onSubmit={handleSubmit}>
+    <form style={{ padding: '10%' }} onSubmit={handleSubmit}>
       <h3>Log in</h3>
 
       <div className="form-group">
@@ -61,11 +61,7 @@ const Register: React.FC = () => {
 
       <div className="form-group">
         <div className="custom-control custom-checkbox">
-          <input
-            type="checkbox"
-            className="custom-control-input"
-            id="customCheck1"
-          />
+          <input type="checkbox" className="custom-control-input" id="customCheck1" />
           <label className="custom-control-label" htmlFor="customCheck1">
             Remember me
           </label>
