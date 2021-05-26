@@ -1,18 +1,28 @@
 import { useState } from 'react';
+import { LogInUser } from '../../core/api/login.api';
 
 interface Value {
   username: string;
   password: string;
+}
+interface Success {
+  success: boolean;
 }
 const Login: React.FC = () => {
   const [value, setValue] = useState<Value>({
     username: '',
     password: ''
   });
+  const [success, isSuccess] = useState<Success>({
+    success: false
+  });
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     // console.log('submitted');
+  };
+
+  const LogInUser: React.MouseEventHandler<HTMLButtonElement> = async () => {
   };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
@@ -48,7 +58,9 @@ const Login: React.FC = () => {
             name="password"
           />
         </div>
-        <button className="btn btn-primary btn-lg btn-block">Login</button>
+        <button className="btn btn-primary btn-lg btn-block" onClick={LogInUser}>
+          Login
+        </button>
       </form>
     </>
   );
