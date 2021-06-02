@@ -1,29 +1,29 @@
 import { useState } from 'react';
-import { LogInUser } from '../../core/api/login.api';
 
 interface Value {
   username: string;
   password: string;
 }
-interface Success {
-  success: boolean;
-}
+// interface Success {
+//   success: boolean;
+// }
 const Login: React.FC = () => {
   const [value, setValue] = useState<Value>({
     username: '',
     password: ''
   });
-  const [success, isSuccess] = useState<Success>({
-    success: false
-  });
+
+  // const [success, isSuccess] = useState<Success>({
+  //   success: false
+  // });
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     // console.log('submitted');
   };
 
-  const LogInUser: React.MouseEventHandler<HTMLButtonElement> = async () => {
-  };
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  const LogInUser: React.MouseEventHandler<HTMLButtonElement> = async () => {};
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     setValue({
