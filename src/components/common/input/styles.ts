@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-const Input = styled.input`
+export const Input: FunctionComponent = styled.input`
   $primary: #11998e;
   $secondary: #38ef7d;
   $white: #fff;
@@ -79,5 +80,3 @@ const Input = styled.input`
     background-color: #222222;
   }
 `;
-
-export default { Input };

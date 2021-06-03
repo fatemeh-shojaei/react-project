@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Button } from './styles';
+import { Button as StyledButton } from './styles';
 
 type InputProps = {
   /*any props*/
@@ -7,7 +7,7 @@ type InputProps = {
 const Button: React.FC<InputProps> = ({ children }) => {
   return (
     <>
-      <Button>{children}</Button>
+      <StyledButton kind={'primary'}>{children}</StyledButton>
     </>
   );
 };

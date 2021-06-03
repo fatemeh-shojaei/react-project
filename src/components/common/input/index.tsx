@@ -1,15 +1,20 @@
 import React from 'react';
-// import { Input } from './styles';
+import { Input as StyledInput } from './styles';
 
 type InputProps = {
   /*any props*/
 };
-const Input: React.FC<InputProps> = (/*{ children }*/) => {
+const Input: React.FC<InputProps> = (
+  // eslint-disable-next-line no-empty-pattern
+  {
+    /*children*/
+  }
+) => {
   return (
     <>
       <div className="form__group field">
-        <Input
-        // type="input"
+        <StyledInput
+        // type="text"
         // className="form__field"
         // placeholder={children}
         // name="name"
