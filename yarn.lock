@@ -12692,6 +12692,7 @@ fsevents@^1.2.7:
     "@types/styled-components": ^5.1.9
     "@typescript-eslint/eslint-plugin": ^4.24.0
     "@typescript-eslint/parser": ^4.24.0
+    babel-eslint: ^10.1.0
     bootstrap: 4.1.1
     eslint: ^7.26.0
     eslint-config-prettier: ^8.3.0

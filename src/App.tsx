@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import MyRoute from './routes/index';
 
-function App() {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -10,6 +10,6 @@ function App() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
