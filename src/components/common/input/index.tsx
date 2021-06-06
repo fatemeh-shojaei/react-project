@@ -9,10 +9,10 @@ export const Input: React.FC<InputProps> = ({ children }) => {
     <>
       <div>
         <StyledInput
-          type="input"
-          placeholder="نام خود را وارد کنید"
-          name="name"
-          id="name"
+          type={children}
+          placeholder={children}
+          name={children}
+          id={children}
           required
         />
         <label htmlFor="name">{children}</label>
