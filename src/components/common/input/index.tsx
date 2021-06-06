@@ -7,18 +7,15 @@ type InputProps = {
 export const Input: React.FC<InputProps> = ({ children }) => {
   return (
     <>
-      <div className="form__group field">
+      <div>
         <StyledInput
-          type="text"
-          className="form__field"
-          placeholder="Enter name"
+          type="input"
+          placeholder="نام خود را وارد کنید"
           name="name"
           id="name"
           required
         />
-        <label htmlFor="name" className="form__label">
-          {children}
-        </label>
+        <label htmlFor="name">{children}</label>
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button as StyledButton } from './styles';
+import { ButtonStyle as StyledButton } from './styles';
 
 type InputProps = {
   /*any props*/
