@@ -14,6 +14,6 @@ export const ButtonStyle = styled(Button)<IViewProps>`
   font-weight: bold;
   font-size: 14px;
   line-height: 20px;
-  background-color: ${(props) => (props.kind === 'primary' ? '#11998e' : '#0D47A1')};
-  color: ${(props) => (props.kind === 'primary' ? 'white' : 'blue')};
+  background-color: ${(props) => (props.kind === 'primary' ? '#11998e' : '#11998e')};
+  color: ${(props) => (props.kind === 'primary' ? 'white' : 'white')};
 `;

@@ -7,7 +7,9 @@ type InputProps = {
 export const Button: React.FC<InputProps> = ({ children }) => {
   return (
     <>
-      <StyledButton kind={'primary'}>{children}</StyledButton>
+      <StyledButton type={children} kind={children}>
+        {children}
+      </StyledButton>
     </>
   );
 };

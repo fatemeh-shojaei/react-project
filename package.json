@@ -5,6 +5,7 @@
   "dependencies": {
     "@bootstrap-styled/v4": "^3.4.0",
     "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.21.1",
     "bootstrap": "4.6.0",
     "formik": "^2.2.9",
     "jsonwebtoken": "^8.5.1",

@@ -6,17 +6,9 @@ type InputProps = {
 };
 export const Input: React.FC<InputProps> = ({ children }) => {
   return (
-    <>
-      <div>
-        <StyledInput
-          type={children}
-          placeholder={children}
-          name={children}
-          id={children}
-          required
-        />
-        <label htmlFor="name">{children}</label>
-      </div>
-    </>
+    <div>
+      <StyledInput type={children} placeholder={children} name={children} id={children} required />
+      <label htmlFor="name">{children}</label>
+    </div>
   );
 };
